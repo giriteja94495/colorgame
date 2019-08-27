@@ -1,0 +1,80 @@
+body{
+    background-color: #232323;
+    margin: 0px;
+    font-family: 'DM Serif Display', serif;
+}
+h1{
+    text-align: center;
+    color: #FE9C8F;
+    background-color: steelblue;
+    margin:0px;
+    font-weight: 800;
+}
+#controls{
+ padding-top:9px;
+}
+.square{
+    width:30%;
+    background-color:pink;
+   padding-bottom: 30%;
+   float: left;
+   margin: 1.66%;
+   transition: background 1.5s;
+   border-radius: 55%;
+}
+#container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+#message{
+    align-content: center;
+}
+#controls{
+    color: black;
+    background-color:white;
+    height: 30px;
+    text-align: center;
+}
+.selected{
+    background-color:steelblue;
+}
+#value{
+    font-size:50px;
+}
+button{
+    padding: 0px;
+    border: #FE9C8F;
+    height: 100%;
+    color: none;
+    background: none;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    outline: none;
+
+}
+button:hover{
+    color: bisque;
+    background:steelblue
+}
+#controls{
+    margin: 0px;
+    padding: 0px;
+}
+#message{
+    padding-left:45px;
+    padding-right: 45px;
+}
+#butt{
+    
+    float: left;
+  margin-left:20px;
+  margin-right:20px;
+ 
+}
+#hard{
+    margin-left: 20px;
+}
+#easy{
+    margin-left:20px;
+}
