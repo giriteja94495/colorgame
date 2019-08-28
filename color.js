@@ -60,14 +60,14 @@ for(var i=0; i<square.length ;i++){
     square[i].addEventListener("click",function(){
         var clickedColor=this.style.backgroundColor;
         if(clickedColor===pickedColor){
-           message.textContent="Correct!!";
+           message.textContent="Yay!! you did it";
            changeColor(clickedColor);
            butt.textContent="Play Again ?"
            head.style.backgroundColor=clickedColor;
         }
         else{
-       this.style.backgroundColor="#232323"
-        message.textContent="Try again Buddy";
+       this.style.backgroundColor="#6DD5FA"
+        message.textContent="Seems like it ain't the correct one";
        
         }
     })
