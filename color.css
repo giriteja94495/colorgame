@@ -1,11 +1,14 @@
 body{
-    background-color: #232323;
+    
+    background: #6DD5FA;  
+    
+    
     margin: 0px;
     font-family: 'DM Serif Display', serif;
 }
 h1{
     text-align: center;
-    color: #FE9C8F;
+    color:pink;
     background-color: steelblue;
     margin:0px;
     font-weight: 800;
@@ -20,7 +23,7 @@ h1{
    float: left;
    margin: 1.66%;
    transition: background 1.5s;
-   border-radius: 55%;
+   border-radius: 85%;
 }
 #container{
     margin: 0 auto;
@@ -36,7 +39,7 @@ h1{
     text-align: center;
 }
 .selected{
-    background-color:steelblue;
+    background-color:pink;
 }
 #value{
     font-size:50px;
@@ -77,4 +80,9 @@ button:hover{
 }
 #easy{
     margin-left:20px;
+}
+.footer{
+    color:white;
+    text-align: center;
+
 }
