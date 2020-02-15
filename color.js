@@ -9,6 +9,15 @@ var butt=document.getElementById("butt");
 var head=document.getElementById("head");
 var easybtn=document.getElementById("easy");
 var hardbtn=document.getElementById("hard");
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+function changetext (){
+   var p=document.querySelector("p");
+    p.textContent="There is a mixture of 3 colors in the below figures,you have to choose a color which has right proportion of red green blue colors(it is mentioned as rgb)....once you understood the instructions refresh the page and have fun in playing the color picking game";
+}
+
 easybtn.addEventListener("click",function(){
     numSquares=3;
     easybtn.classList.add("selected");
@@ -24,6 +33,7 @@ easybtn.addEventListener("click",function(){
           square[i].style.display="none";
       }
   }
+ 
     
 })
 hardbtn.addEventListener("click",function(){
@@ -66,7 +76,7 @@ for(var i=0; i<square.length ;i++){
            head.style.backgroundColor=clickedColor;
         }
         else{
-       this.style.backgroundColor="#6DD5FA"
+       this.style.backgroundColor="#6DD5FA";
         message.textContent="Seems like it ain't the correct one";
        
         }
@@ -94,4 +104,5 @@ function randomrgb(){
     var g=Math.floor(Math.random()*256);
     var b=Math.floor(Math.random()*256);
    return "rgb(" + r + ", " + g + ", " + b +")";
-}
+} 
+
