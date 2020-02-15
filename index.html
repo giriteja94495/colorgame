@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="color.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2014-11-24/05670b49eedf02f6104552358836b5b8.ico" type="image/x-icon">
     <title>Color Game</title>
-    
 </head>
 <body>
-    <h1 id="head"> GiriTeja Color
+        <h1 id="head"> GiriTeja Color
         <br> <span id="value">      </span> 
         <br>   Picking Game</h1>
+ 
     <div id="controls">
         <button id="butt">New Colors</button>
         <span id="message"></span>
@@ -22,6 +26,40 @@
         <button id="hard" class="selected">Hard</button>
        
     </div>
+    
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+ Click For Instructions
+</button>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">How to Play?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        1. This game is created for fun ,play it with your friend or enemy or whomever you want <br>
+        2.Basically this game is for my resume sake..but i don't mind if you play it <img src="https://awesomeopensource.com/favicon.ico" alt="" height="20px" width="20px"><br>
+        3.So, there is red green blue colors given in some proportion out of 255 in the format rgb(red,green,blue)
+       <br> 
+       3. You have to guess the color which is obtained by mixing above proportianate colors 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+      
+ 
     <div id="container">
         <div class="square"></div>
         <div class="square"></div>
@@ -29,9 +67,12 @@
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
-        <footer class="footer">Created by  <a href="https://github.com/giriteja94495"><span>  </span>   Bille GiriTeja<img src="https://github.githubassets.com/favicon.ico"></a>
+        <br>
+        <footer class="footer"> <br>Created by  <a href="https://github.com/giriteja94495"><span>  </span>   Bille GiriTeja<img src="https://github.githubassets.com/favicon.ico"></a>
         <hr>I have no idea how to take copyrights for this !!</footer>
     </div>
+    
+   
     <script src="color.js"></script>
 </body>
 </html>
