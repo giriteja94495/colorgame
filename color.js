@@ -8,6 +8,14 @@ var message=document.getElementById("message");
 var butt=document.getElementById("butt");
 var head=document.getElementById("head");
 var easybtn=document.getElementById("easy");
+$(document).ready(function(){
+setTimeout(function(){
+$('#modal1').modal("show");
+setTimeout(function(){
+$('#modal1').modal("hide");
+},10000);
+},3000);
+});
 var hardbtn=document.getElementById("hard");
 function myFunction() {
     var popup = document.getElementById("myPopup");
